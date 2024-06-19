@@ -681,9 +681,9 @@ public class GUI extends JFrame {
 
                     // Afișăm mesajul corect în funcție de valuta aleasă
                     if ("EUR".equals(valuta)) {
-                        payFrame.add(new JLabel("Trebuie să achitați " + sumaDeAchitat + " EUR"), gbcPay);
-                    } else {
                         payFrame.add(new JLabel("Trebuie să achitați " + sumaDeAchitat + " MDL"), gbcPay);
+                    } else {
+                        payFrame.add(new JLabel("Trebuie să achitați " + sumaDeAchitat + " EUR"), gbcPay);
                     }
 
                     gbcPay.gridx = 0;
